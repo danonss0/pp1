@@ -1,7 +1,7 @@
 def f(dic,x,y):
     sum=0
-    for k,v in dic.items():
-        for k in v:
+    for i in dic:
+        for k in dic[i]:
             if k>=x and k<=y:
                 sum+=k
     return sum
